@@ -24,7 +24,6 @@ h2 {
 p {
   font-family: "Open Sans", sans-serif;
   color: rgba(255,255,255,0.7);
-  font-weight: 700;
   font-size: 1.124rem;
   line-height: 1.4rem;
 }
@@ -34,7 +33,6 @@ a, h3 {
   font-family: "Open Sans", sans-serif;
   color: rgba(255,255,255,0.7);
   font-weight: 700;
-  font-weight: 400;
 }
 
 a:hover {
@@ -43,12 +41,14 @@ a:hover {
 }
 
 .btn {
-  font-family: "Open Sans", sans-serif;
-  color: rgba(255,255,255,0.7);
-  font-weight: 700;
   border-radius: 0.125rem;
   background-color: rgba(245,166,35,0.7);
   font-size: 1.375rem;
+  padding: 1.25rem 3.125rem;
+}
+
+.btn:hover{
+  color: rgba(255,255,255,1);
 }
 
 /* NAVIGATION */
@@ -79,6 +79,32 @@ nav ul li {
 }
 
 /* JUMBOTRON */
+
+.jumbotron {
+  margin-top: 3.875rem;
+  background-image: url('../images/dancers.png'); background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  max-width: 45rem;
+  text-align: center;
+  padding-top: 9.4375rem;
+}
+
+.jumbotron .container h1 {
+  color: rgba(255,255,255,0.7);
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2.6875rem;
+}
+
+.jumbotron .container p {
+  margin-bottom: 5rem;
+}
 
 /* CONTENT */
 
