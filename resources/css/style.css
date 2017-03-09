@@ -33,6 +33,7 @@ a, h3 {
   font-family: "Open Sans", sans-serif;
   color: rgba(255,255,255,0.7);
   font-weight: 700;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -81,7 +82,7 @@ nav ul li {
 /* JUMBOTRON */
 
 .jumbotron {
-  margin-top: 3.875rem;
+  margin: 3.875rem 0 0 0;
   background-image: url('../images/dancers.png'); background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -107,5 +108,52 @@ nav ul li {
 }
 
 /* CONTENT */
+
+.content {
+  padding: 0;
+}
+
+.content .container-fluid {
+  height: 31.25rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.content .container-fluid .text {
+  height: 20rem;
+  width: 24rem;
+  background-color: rgba(120, 73, 225, 0.9);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+.content .first {
+  background-image: url('../images/graffiti.png'); background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content .second {
+  background-image: url('../images/fire-photo.png'); background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content .second .text {
+  background-color: rgba(173, 74, 226, 0.9);
+}
+
+.content .third {
+  background-image: url('../images/jump.png'); background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 /* FOOTER */
