@@ -133,7 +133,6 @@ nav ul li {
   align-items: flex-start;
 }
 
-
 .content .first {
   background-image: url('../images/graffiti.png'); background-repeat: no-repeat;
   background-position: center;
@@ -157,3 +156,47 @@ nav ul li {
 }
 
 /* FOOTER */
+
+footer {
+  background-image: url('../images/party.png'); background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer1 {
+  height: 3.125rem;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(120, 73, 225, 0.3);
+  padding: 0 2rem;
+}
+
+footer .footer1 img {
+  height: 2.75rem;
+  width: auto;
+}
+
+footer .footer1 div {
+  width: 9.375rem;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer1 h3 {
+  margin: 0;
+}
+
+footer .footer2 {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
