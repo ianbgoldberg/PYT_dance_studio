@@ -24,8 +24,8 @@ h2 {
 p {
   font-family: "Open Sans", sans-serif;
   color: #666;
-  font-size: 1.124rem;
-  line-height: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 /* navigation text, and footer1 text*/
@@ -166,6 +166,7 @@ nav ul li:first-child a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-right: 2rem;
 }
 
 .jumbotron div .text h1 {
@@ -181,9 +182,40 @@ nav ul li:first-child a {
   }
 }
 
-  /* FOOTER */
+/*-- STYLES --*/
 
-  footer {
+.styles {
+  padding: 0;
+}
+
+.styles .style {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 19%;
+}
+
+.styles .style img {
+  height: 9.375rem;
+  width: auto;
+  margin-left: 5rem;
+}
+
+.styles #color {
+  background-color: #f2f2f2;
+}
+
+.styles #color img {
+  margin: 0 5rem 0 0;
+}
+
+.styles .style .text {
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
     background-image: url('../images/party.png'); background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -193,7 +225,7 @@ nav ul li:first-child a {
     align-items: center;
   }
 
-  footer .footer1 {
+footer .footer1 {
     height: 3.125rem;
     width: 100%;
     display: inline-flex;
@@ -203,27 +235,27 @@ nav ul li:first-child a {
     padding: 0 2rem;
   }
 
-  footer .footer1 img {
+footer .footer1 img {
     height: 2.75rem;
     width: auto;
   }
 
-  footer .footer1 div {
+footer .footer1 div {
     width: 9.375rem;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  footer .footer1 .small {
+footer .footer1 .small {
     display: none;
   }
 
-  footer .footer1 h3 {
+footer .footer1 h3 {
     margin: 0;
   }
 
-  footer .footer2 {
+footer .footer2 {
     height: 15rem;
     padding-top: 5rem;
     display: flex;
