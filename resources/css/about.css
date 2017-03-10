@@ -175,10 +175,44 @@ nav ul li:first-child a {
   margin-bottom: 4rem;
 }
 
+.jumbotron div .text p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 955px) {
+  .jumbotron div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jumbotron div img {
+    width: 100%
+  }
+
+  .jumbotron div .text {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .jumbotron div .text h1 {
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .jumbotron div .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+}
 
 @media only screen and (max-width: 500px) {
   .jumbotron {
     margin: 2.5rem 0 0 0;
+  }
+
+  .jumbotron div .text {
+    padding: 1rem;
   }
 }
 
@@ -199,6 +233,7 @@ nav ul li:first-child a {
   height: 9.375rem;
   width: auto;
   margin-left: 5rem;
+  display: inherit;
 }
 
 .styles #color {
@@ -209,8 +244,49 @@ nav ul li:first-child a {
   margin: 0 5rem 0 0;
 }
 
+.styles .style .mobile {
+  display: none;
+}
+
 .styles .style .text {
   text-align: center;
+}
+
+@media only screen and (max-width: 975px) {
+
+  .styles .style {
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+  }
+
+  .styles .style .desktop {
+    display: none;
+  }
+
+  .styles .style .mobile {
+    display: inherit;
+  }
+
+  .styles .style img {
+    height: 6.25rem;
+    margin: 0;
+  }
+
+  .styles #color img {
+    height: 6.25rem;
+    margin: 0;
+  }
+
+  .styles .style h1 {
+    font-size: 1.75rem;
+  }
+
+  .styles .style p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
 }
 
 /*-- LOCATION --*/
@@ -232,6 +308,7 @@ nav ul li:first-child a {
   background-color: #794ae2;
   opacity: 0.9;
   padding: 3rem;
+  margin: 0;
 }
 
 .location .text h1 {
@@ -246,6 +323,42 @@ nav ul li:first-child a {
   font-size: 0.75rem;
   padding: 0;
   margin: 0;
+}
+
+@media only screen and (max-width: 1015px) {
+  .location {
+    background-image:       url('../images/map-cropped-1.jpg');
+    background-position: left;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .location {
+    background-image: url('../images/map-cropped-2.jpg');
+    background-position: left;
+  }
+
+  .location .text{
+    width: 30rem;
+    padding: 1rem;
+  }
+
+  .location .text h1 {
+    margin: 0 2rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+
+  .location .text h1 {
+    font-size: 1.5rem;
+    margin: 0 0rem 0 0;
+  }
+
+  .location .text p {
+    margin-bottom: -0.5rem;
+  }
 }
 
 /* FOOTER */
