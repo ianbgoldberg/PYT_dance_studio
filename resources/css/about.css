@@ -12,7 +12,7 @@ h1 {
   font-family: "Roboto", sans-serif;
 }
 
-  /* footer2 text*/
+/* footer2 text*/
 h2 {
   font-family: "Open Sans", sans-serif;
   color: rgba(255,255,255,0.7);
@@ -213,56 +213,90 @@ nav ul li:first-child a {
   text-align: center;
 }
 
+/*-- LOCATION --*/
+
+.location {
+  height: 31.25rem;
+  background-image: url('../images/map.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.location .text {
+  width: 30rem;
+  background-color: #794ae2;
+  opacity: 0.9;
+  padding: 3rem;
+}
+
+.location .text h1 {
+  color: #fff;
+  display: inherit;
+  padding: 0;
+  margin: 2rem 4rem 0 0;
+}
+
+.location .text p {
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+
 /* FOOTER */
 
 footer {
-    background-image: url('../images/party.png'); background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  background-image: url('../images/party.png'); background-repeat: no-repeat;
+  background-position: center;    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 footer .footer1 {
-    height: 3.125rem;
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(120, 73, 225, 0.3);
-    padding: 0 2rem;
-  }
+  height: 3.125rem;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(120, 73, 225, 0.3);
+  padding: 0 2rem;
+}
 
 footer .footer1 img {
-    height: 2.75rem;
-    width: auto;
-  }
+  height: 2.75rem;
+  width: auto;
+}
 
 footer .footer1 div {
-    width: 9.375rem;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  width: 9.375rem;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 footer .footer1 .small {
-    display: none;
-  }
+  display: none;
+}
 
 footer .footer1 h3 {
-    margin: 0;
-  }
+  margin: 0;
+}
 
 footer .footer2 {
-    height: 15rem;
-    padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  height: 15rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media only screen and (max-width: 767px) {
