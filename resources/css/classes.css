@@ -5,10 +5,9 @@ html {
 }
 
 h1 {
-  color: rgba(255,255,255,0.7);
+  color: rgba(174,75,227,0.9);
   font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 1.2;
+  font-size: 1.875rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -21,11 +20,20 @@ h2 {
   letter-spacing: 0.044rem;
 }
 
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
-  color: rgba(255,255,255,0.7);
-  font-size: 1.124rem;
-  line-height: 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
 }
 
 /* navigation text, read more, and footer1 text*/
@@ -85,6 +93,10 @@ nav ul li {
   margin-left: 2rem;
 }
 
+nav ul li:nth-child(3) a {
+  color: #f5a623;
+}
+
 @media only screen and (max-width: 767px) {
   nav {
     padding: 0 2rem;
@@ -131,15 +143,132 @@ nav ul li {
 
 .jumbotron {
   margin: 3.875rem 0 0 0;
+  padding: 0;
+  background-color: #fff;
+  border-bottom: 0.625rem solid rgba(174,75,227,0.9);;
+}
+
+.jumbotron div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jumbotron div img {
+  width: 50%;
+  height: auto;
+  display: inherit;
+}
+
+.jumbotron div .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3rem;
+}
+
+.jumbotron div .text h1 {
+  color: rgba(174,75,227,0.9);
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.jumbotron div .text p {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media only screen and (max-width: 955px) {
+
+  .jumbotron div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .jumbotron div img {
+    width: 100%;
+  }
+
+  .jumbotron div .text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .jumbotron div .text h1 {
+    font-size: 1.25rem;
+  }
+
+  .jumbotron div .text p {
+    font-size: 1rem;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
   .jumbotron {
     margin: 2.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
-  /* FOOTER */
+/* CONTENT */
+
+.content {
+  margin: 5.3125rem 1.125rem 2.4rem 0;
+}
+
+.content .row div {
+  max-width: 25rem;
+  margin: 0 0 3.75rem 0;
+}
+
+.content .row div h1 {
+  margin-bottom: 1.125rem;
+}
+
+.content .row div h5 {
+  margin: -0.75rem 0 1.125rem 0;
+}
+
+/*  */
+
+@media only screen and (max-width: 991px) {
+  .content .row div {
+    max-width: 18.75rem;
+    margin: 1rem 1rem 2.25rem 1rem;
+  }
+
+  .content .row div h5 {
+    font-size: 1.125rem;
+  }
+
+  .content .row div p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .content .row div {
+    max-width: 17.5rem;
+    margin: 0.5rem 0.5rem 2.25rem 0.5rem;
+  }
+
+  .content .row div h4 {
+    font-size: 1rem;
+  }
+
+  .content .row div h5, p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+}
+
+/* FOOTER */
 
 footer {
   background-image: url('../images/party.png'); background-repeat: no-repeat;
