@@ -5,11 +5,24 @@ html {
 }
 
 h1 {
-  color: rgba(255,255,255,0.7);
+  color: #8a54ff;
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: 1.875rem;
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* footer2 text*/
@@ -19,13 +32,6 @@ h2 {
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.044rem;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  color: rgba(255,255,255,0.7);
-  font-size: 1.124rem;
-  line-height: 1.4rem;
 }
 
 /* navigation text, read more, and footer1 text*/
@@ -85,6 +91,10 @@ nav ul li {
   margin-left: 2rem;
 }
 
+#faculty {
+  color: #f5a623;
+}
+
 @media only screen and (max-width: 767px) {
   nav {
     padding: 0 2rem;
@@ -131,11 +141,40 @@ nav ul li {
 
 .jumbotron {
   margin: 3.875rem 0 0 0;
+  padding: 9rem 0 9rem 0;
+  border-bottom: 10px solid #8a54ff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url('../images/faculty.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.jumbotron div {
+  margin: 0;
+  width: 66%;
+  text-align: center;
+}
+
+.jumbotron div h1 {
+  color: #8a54ff;
+  font-family: "Roboto", sans-serif;
+}
+
+.jumbotron div p {
+  color: #999;
 }
 
 @media only screen and (max-width: 500px) {
   .jumbotron {
     margin: 2.5rem 0 0 0;
+    padding: 9rem 0 0 0;
+  }
+
+  .jumbotron div {
+    width: 100%;
   }
 }
 
