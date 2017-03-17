@@ -185,13 +185,13 @@ nav ul li {
 }
 
 .content .row div {
-  width: 16.875rem;
   margin-bottom: 6.25rem;
   text-align: center;
+  max-height: 370px;
 }
 
 .content .row div img {
-  margin-bottom: 1.25rem;
+  margin: 0 auto 1.25rem auto;
   display: inherit;
 }
 
