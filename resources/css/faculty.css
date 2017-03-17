@@ -178,7 +178,52 @@ nav ul li {
   }
 }
 
-  /* FOOTER */
+/* CONTENT */
+
+.content {
+  margin: 5.625rem 7.5rem 11.25rem 7.5rem;
+}
+
+.content .row div {
+  width: 16.875rem;
+  margin-bottom: 6.25rem;
+  text-align: center;
+}
+
+.content .row div img {
+  margin-bottom: 1.25rem;
+  display: inherit;
+}
+
+.content .row div h1 {
+  margin-bottom: 0.625rem;
+}
+
+.content .row div h4 {
+  margin-bottom: 0.625rem;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .content {
+    margin: 5.625rem 0 0.6875rem 0;
+  }
+
+  .content .row div h1 {
+    font-size: 1.5rem;
+  }
+
+  .content .row div h4 {
+    font-size:1rem;
+  }
+
+  .content .row div p {
+    font-size:0.875rem;
+    line-height: 1.7rem;
+  }
+}
+
+/* FOOTER */
 
 footer {
   background-image: url('../images/party.png'); background-repeat: no-repeat;
